@@ -1,213 +1,87 @@
 # 💻 Windows Help Desk Lab (osTicket + Active Directory)
 
 ## 🔹 Overview
+Built a virtual IT help desk lab using **Windows Server 2022** and a **Windows 10 client** machine within a virtualized environment. 
 
-Built a virtual help desk environment using Windows Server 2022 and a Windows 10 client machine.
-Configured Active Directory and implemented an internal ticketing system (osTicket) to simulate real-world IT support scenarios.
-
-This lab demonstrates the ability to troubleshoot and resolve common help desk issues including account lockouts, VPN connectivity problems, and software licensing errors.
+Configured **Active Directory** and deployed **osTicket** to simulate a real-world help desk workflow including ticket creation, troubleshooting, escalation, resolution, and documentation. This project demonstrates hands-on understanding of enterprise IT support processes and remote troubleshooting methodology.
 
 ---
 
-## 🔹 Environment
+## 🔹 Environment & Lab Architecture
+* **OS:** Windows Server 2022 (Domain Controller), Windows 10 Pro (Client)
+* **Directory Services:** Active Directory Users & Computers (ADUC)
+* **Ticketing System:** osTicket (LAMP stack on Windows via IIS)
+* **Virtualization:** Oracle VirtualBox
 
-* Windows Server 2022 (Domain Controller)
-* Windows 10 Client
-* VirtualBox / VMware
-* Active Directory (ADUC)
-* osTicket (internal ticketing system)
+### **Lab Infrastructure Setup**
+| Storage Configuration | Guest Additions | Installation Repository |
+| :--- | :--- | :--- |
+| ![Storage](add-optical-drive.png) | ![Drivers](cddrive-guest-additions.png) | ![Files](my-installation-files.png) |
+| *Configuring Virtual SATA controllers.* | *Ensuring driver compatibility.* | *Pre-staging MySQL, PHP, and osTicket.* |
+
+---
+
+# 🎫 Help Desk Lifecycle & Ticket Scenarios
+This section demonstrates the transition from a user reporting an issue to a technician resolving it.
+
+### **1. Business Logic Configuration**
+Before handling tickets, I configured the backend infrastructure to mirror an enterprise environment.
+* **Departments:** ![Departments](department-list.png) *(Configuring Support, Maintenance, and Hardware tiers)*
+* **SLA Plans:** ![SLA](sla-plans.png) *(Setting response time objectives: SEV-A, SEV-B, SEV-C)*
+* **Agent Roles:** ![Agent Roles](add-agent-role.png) *(Defining permissions for Help Desk staff)*
+
+### **2. Ticket Scenario 1 – Adobe Licensing Issue**
+* **Issue:** User reported a licensing mismatch preventing access to Creative Cloud.
+* **Troubleshooting:** Verified licensing portal synchronization and reassigned seats.
+* **Resolution:** ![Adobe Fix](adobe-ticket.png)
+
+### **3. Ticket Scenario 2 – VPN Connectivity Issue**
+* **Issue:** Remote user unable to connect to the corporate gateway.
+* **Troubleshooting:** Conducted DNS flush and verified gateway IP configuration.
+* **Resolution:** ![VPN Resolved](vpn-ticket-resolved.png)
+
+### **4. Ticket Scenario 3 – Account Lockout / Password Reset**
+* **Issue:** AD Account lockout after multiple failed login attempts.
+* **Troubleshooting:** Reset credentials and forced password change via Admin Panel.
+* **Resolution:** ![Account Resolved](ticket-resolved.png)
+
+### **5. Final Resolution Summary**
+* **Outcome:** Successfully resolved all pending high-priority tickets within SLA.
+* **Evidence:** ![Closed Tickets](3-closed-tickets.png)
+
+---
+
+# 🛠️ osTicket Deployment & Infrastructure Troubleshooting
+This section showcases the "Service Desk Engineering" side of the lab. Multiple infrastructure hurdles were cleared to get the environment live.
+
+### **1. Core Installation & Database Engineering**
+* **Database Setup:** ![Clean Slate](mysql-clean-slate.png) & ![Create Database](create-database.png)
+* **Permissions & Security:** ![Read Only](read-only.png) & ![Config Permissions](ost-config-permissions.png) *(Hardening the system post-installation)*
+* **Installation Success:** ![Congratulations](congratulations.png) & ![System Online](osticket.png)
+
+### **2. Critical Troubleshooting: Resolving Configuration Failures**
+I documented the transition from system failure to a stable environment.
+
+* **Database Connection & Admin Issues:** ![Admin Login Error](admin-login-error.png) & ![Data Admin Recovery](data-admin-recovery.png)
+* **Timeout & Performance Tuning:** ![Execution Time](increase-execution-time.png) *(Modifying `php.ini` to handle script execution limits)*
+* **Visualizing the "Break":** ![Many Errors](many-errors.png) & ![Detailed Errors](detailed-errors.png) *(Analyzing raw PHP logs for root cause identification)*
+
+### **3. Documented Errors & Resolutions**
+* **HTTP 500 & General Failures:** ![Real Error](real-error.png) & ![Error Again](error-again.png)
+* **Specific Resolution:** ![osTicket Fix](osticket-fix.png)
+* **Final Deployment Success:** ![Success](success.png)
 
 ---
 
 ## 🔹 Skills Demonstrated
-
-* Active Directory user management
-* Password resets & account unlocks
-* VPN troubleshooting
-* Software troubleshooting (licensing issues)
-* Ticket documentation and resolution workflow
-* Basic networking troubleshooting
-
----
-
-## 🔹 Lab Architecture
-
-<!-- INSERT ONE IMAGE HERE (your server + client setup if you have it) -->
-
-![Lab Architecture](screenshots/lab-architecture.png)
-
----
-
-# 🎫 Ticket 1: Adobe License Issue
-
-## Issue
-
-User unable to access Adobe software due to a licensing error.
-
-## Investigation
-
-* Reviewed ticket details in osTicket
-* Identified licensing mismatch issue
-
-## Resolution
-
-* Removed and reassigned user license
-* Synced changes with system
-
-## Result
-
-User regained access to Adobe software successfully.
-
-## Screenshots
-
-![Ticket Created](screenshots/ticket1-1.png)
-*User reports Adobe license issue*
-
-![Investigation](screenshots/ticket1-2.png)
-*Reviewing ticket details and identifying problem*
-
-![Fix Applied](screenshots/ticket1-3.png)
-*License reassigned and system updated*
-
-![Resolved](screenshots/ticket1-4.png)
-*Ticket successfully resolved*
-
----
-
-# 🎫 Ticket 2: VPN Connection Failure
-
-## Issue
-
-User unable to connect to VPN (Gateway Not Reachable error).
-
-## Investigation
-
-* Reviewed VPN error message
-* Checked network configuration
-
-## Resolution
-
-* Reset network adapter
-* Flushed DNS cache
-
-## Result
-
-VPN connection restored successfully.
-
-## Screenshots
-
-![Ticket Created](screenshots/ticket2-1.png)
-*User reports VPN connection issue*
-
-![Error](screenshots/ticket2-2.png)
-*VPN error message displayed*
-
-![Fix Applied](screenshots/ticket2-3.png)
-*Network troubleshooting steps performed*
-
-![Resolved](screenshots/ticket2-4.png)
-*VPN connection successfully restored*
-
----
-
-# 🎫 Ticket 3: Account Lockout / Password Reset
-
-## Issue
-
-User unable to log in due to account lockout.
-
-## Investigation
-
-* Verified account status in Active Directory
-* Identified lockout due to failed login attempts
-
-## Resolution
-
-* Unlocked account in Active Directory
-* Reset user password
-
-## Result
-
-User successfully logged in.
-
-## Screenshots
-
-![Ticket Created](screenshots/ticket3-1.png)
-*User reports login issue*
-
-![Active Directory](screenshots/ticket3-2.png)
-*Account found locked in ADUC*
-
-![Fix Applied](screenshots/ticket3-3.png)
-*Account unlocked and password reset*
-
-![Resolved](screenshots/ticket3-4.png)
-*User able to log in successfully*
-
----
-
-## 🔹 Ticket Dashboard
-
-<!-- OPTIONAL: combine your overview screenshots into one collage -->
-
-![Ticket Dashboard](screenshots/dashboard.png)
-
----
-
----
-
-# 🛠️ osTicket Deployment & Troubleshooting
-
-During the setup of the help desk environment, multiple system and configuration issues were encountered and resolved while deploying osTicket and configuring the Windows Server environment.
-
-## Issues Resolved
-- IIS configuration problems
-- PHP Manager installation issues
-- MySQL connection errors
-- Missing PHP extensions
-- osTicket setup validation failures
-- Permission and service configuration issues
-- Internal network communication troubleshooting
-
-## Troubleshooting Process
-Each issue was researched, tested, and resolved through step-by-step troubleshooting within the virtual lab environment.
-
-## Setup & Troubleshooting Screenshots
-
-![Setup Process](screenshots/setup-1.png)
-*Initial Windows Server and IIS configuration*
-
-![PHP Configuration](screenshots/setup-2.png)
-*Configuring PHP Manager and required extensions*
-
-![Database Troubleshooting](screenshots/setup-3.png)
-*Resolving MySQL connection and configuration issues*
-
-![osTicket Validation](screenshots/setup-4.png)
-*Fixing osTicket setup requirements and validation checks*
-
-![Final Deployment](screenshots/setup-5.png)
-*Successful osTicket deployment and internal access testing*
-
----
-
-## 🧠 What I Learned
-
-* How to manage and resolve IT support tickets using a structured workflow
-* Troubleshooting authentication and user access issues in Active Directory
-* Diagnosing and resolving network connectivity problems
-* Communicating technical solutions clearly through ticketing systems
+* **AD Management:** User provisioning and account recovery.
+* **Technical Troubleshooting:** IIS Module mapping, PHP extension configuration, and MySQL administration.
+* **System Optimization:** Performance tuning via `php.ini` and execution time adjustments.
+* **Help Desk Operations:** SLA management, department triaging, and ticket lifecycle documentation.
 
 ---
 
 ## 🚀 Future Improvements
-
-* Add more advanced ticket scenarios (hardware, permissions, group policy)
-* Automate common fixes using PowerShell scripts
-* Expand lab to include networking simulations
-
----
-
-## 📌 Notes
-
-All scenarios were created and resolved in a virtual lab environment to simulate real-world help desk responsibilities.
+* Integrate Azure AD for hybrid identity management simulations.
+* Automate user onboarding via PowerShell scripts.
+* Implement Group Policy Objects (GPO) to manage client machine restrictions.
