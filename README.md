@@ -324,12 +324,18 @@ This section highlights the troubleshooting methodology used to diagnose and res
 
 # 🔹 Skills Demonstrated
 
-## Active Directory & User Management
+## 🧠 Active Directory – User Management
 
-- Password resets and account recovery
-- User administration workflows
-- Active Directory troubleshooting fundamentals
-- Account lockout resolution
+Implemented Active Directory user administration workflows inside a simulated enterprise domain environment. This included managing user accounts, handling password resets, resolving account lockouts, and organizing organizational units (OUs) to mirror a real corporate IT structure.
+
+### Key Administrative Tasks Performed:
+- Created and managed user accounts within Active Directory Users and Computers (ADUC)
+- Simulated password reset and account recovery procedures
+- Resolved account lockout scenarios using AD tools
+- Organized users into structured OUs (Organizational Units)
+- Assigned users to security groups for role-based access control
+- Applied real-world troubleshooting workflows for authentication issues
+- All tasks were performed in a Windows Server 2022 virtual lab simulating a real enterprise Active Directory environment.
 
 ## Help Desk Operations
 
