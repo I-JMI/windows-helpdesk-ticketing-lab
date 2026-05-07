@@ -11,7 +11,6 @@
 # 🔗 QUICK NAVIGATION
 
 ## 📌 Overview
-<a id="overview"></a>
 
 # 🔹 Overview
 - [Overview](#overview)
@@ -47,7 +46,7 @@
 - [Future Improvements](#future-improvements)
 - [Notes](#notes)
 ---
-
+<a id="overview"></a>
 # 🔹 Overview
 
 Built a virtual IT help desk environment using **Windows Server 2022**, **Windows 10 Pro**, **Active Directory**, and **osTicket** within Oracle VirtualBox.
@@ -69,7 +68,7 @@ This lab was built from the ground up while diagnosing and resolving multiple de
 The goal of this project was to strengthen hands-on IT support and system administration skills commonly used in entry-level Help Desk, Desktop Support, and IT Support Specialist roles.
 
 ---
-
+<a id="core-skills"></a>
 # 🔹 Core Skills Demonstrated
 
 - Active Directory Administration  
@@ -84,7 +83,7 @@ The goal of this project was to strengthen hands-on IT support and system admini
 - Ticket Lifecycle Management  
 
 ---
-
+<a id="environment"></a>
 # 🔹 Environment & Lab Architecture
 
 | Component | Technology |
@@ -99,7 +98,7 @@ The goal of this project was to strengthen hands-on IT support and system admini
 | Virtualization | Oracle VirtualBox |
 
 ---
-
+<a id="lab-setup"></a>
 # 🔹 Virtual Lab Infrastructure Setup
 
 | Storage Configuration | Guest Additions & Drivers | Installation Repository |
@@ -108,7 +107,7 @@ The goal of this project was to strengthen hands-on IT support and system admini
 | Configuring virtual storage controllers and optical drives within VirtualBox. | Installing Guest Additions and compatibility drivers for system stability. | Organizing installation packages including MySQL, PHP, IIS components, and osTicket files. |
 
 ---
-
+<a id="ticket-workflow"></a>
 # 🎫 Help Desk Lifecycle & Ticket Scenarios
 
 ## 🔹 Help Desk Backend Configuration
@@ -123,7 +122,7 @@ The goal of this project was to strengthen hands-on IT support and system admini
 ![Agent Roles](add-agent-role.png)
 
 ---
-
+<a id="adobe-ticket"></a>
 ## 🎫 Ticket Scenario 1 – Adobe Licensing Issue
 
 User unable to access Adobe Creative Cloud due to licensing synchronization issue.
@@ -138,7 +137,7 @@ User unable to access Adobe Creative Cloud due to licensing synchronization issu
 ![Adobe Fix](adobe-ticket.png)
 
 ---
-
+<a id="vpn-ticket"></a>
 ## 🎫 Ticket Scenario 2 – VPN Connectivity Issue
 
 User unable to connect to corporate VPN gateway.
@@ -153,7 +152,7 @@ User unable to connect to corporate VPN gateway.
 ![VPN Resolved](vpn-ticket-resolved.png)
 
 ---
-
+<a id="ad-lockout"></a>
 ## 🎫 Ticket Scenario 3 – Active Directory Account Lockout
 
 User account locked due to failed login attempts.
@@ -179,7 +178,7 @@ User account locked due to failed login attempts.
 6. Ticket resolved and closed  
 
 ---
-
+<a id="final-summary"></a>
 # 🔹 Final Resolution Summary
 
 Successfully completed multiple enterprise-style support tickets involving:
@@ -194,7 +193,7 @@ Successfully completed multiple enterprise-style support tickets involving:
 ![Closed Tickets](3-closed-tickets.png)
 
 ---
-
+<a id="osticket-deployment"></a>
 # 🛠️ osTicket Deployment & Infrastructure Troubleshooting
 
 Built and stabilized a full help desk system involving:
@@ -209,7 +208,7 @@ Built and stabilized a full help desk system involving:
 ---
 
 ## 🔹 Core Installation & Database Configuration
-
+<a id="database-setup"></a>
 ### Database Setup
 ![Clean Slate](mysql-clean-slate.png)
 
@@ -217,7 +216,7 @@ Built and stabilized a full help desk system involving:
 ![Create Database](create-database.png)
 
 ---
-
+<a id="permissions"></a>
 ## 🔹 Permissions & Configuration Hardening
 
 ### File Permissions
@@ -227,7 +226,7 @@ Built and stabilized a full help desk system involving:
 ![Config Permissions](ost-config-permissions.png)
 
 ---
-
+<a id="deployment"></a>
 ## 🔹 Deployment Completion
 
 ### Installation Complete
@@ -237,7 +236,7 @@ Built and stabilized a full help desk system involving:
 ![System Online](osticket.png)
 
 ---
-
+<a id="error-handling"></a>
 ## 🔹 Critical Troubleshooting & Failure Resolution
 
 ### Administrative & Database Errors
@@ -257,7 +256,7 @@ Built and stabilized a full help desk system involving:
 ![Detailed Errors](detailed-errors.png)
 
 ---
-
+<a id="stable-system"></a>
 ## 🔹 Final Error Resolution & Stable Deployment
 
 ### HTTP 500 Error
@@ -272,7 +271,7 @@ Built and stabilized a full help desk system involving:
 ---
 
 # 🔹 Skills Demonstrated
-
+<a id="ad-management"></a>
 ## 🧠 Active Directory – User Management
 - User account creation and management  
 - Password resets and recovery  
@@ -282,7 +281,7 @@ Built and stabilized a full help desk system involving:
 - Authentication troubleshooting  
 
 ---
-
+<a id="helpdesk-ops"></a>
 ## 🧩 Help Desk Operations
 - Ticket lifecycle management  
 - SLA-based routing  
@@ -290,7 +289,7 @@ Built and stabilized a full help desk system involving:
 - Documentation of resolutions  
 
 ---
-
+<a id="infrastructure"></a>
 ## 🛠 Infrastructure & System Administration
 - Windows Server deployment  
 - IIS configuration  
@@ -299,7 +298,7 @@ Built and stabilized a full help desk system involving:
 - File permission management  
 
 ---
-
+<a id="troubleshooting"></a>
 ## 🔧 Technical Troubleshooting
 - Root cause analysis  
 - Service failure debugging  
@@ -308,7 +307,7 @@ Built and stabilized a full help desk system involving:
 - Application error resolution  
 
 ---
-
+<a id="what-i-learned"></a>
 # 🧠 What I Learned
 
 - Enterprise help desk workflows  
@@ -319,7 +318,7 @@ Built and stabilized a full help desk system involving:
 - Systematic root cause analysis  
 
 ---
-
+<a id="future-improvements"></a>
 # 🚀 Future Improvements
 
 - Azure Active Directory integration  
@@ -330,7 +329,7 @@ Built and stabilized a full help desk system involving:
 - Onboarding automation scripts  
 
 ---
-
+<a id="notes"></a>
 # 📌 Notes
 
 All configurations, troubleshooting, and ticket scenarios were performed in a controlled virtual lab environment to simulate real-world IT support and system administration workflows for portfolio and hiring demonstration purposes.
