@@ -8,7 +8,7 @@
 
 ---
 
-# 🔗 QUICK NAVIGATION
+# 📑 Table of Contents
 
 ## 📌 Overview
 
