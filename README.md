@@ -8,35 +8,35 @@
 
 ---
 
-# 🔗 QUICK NAVIGATION (RECRUITER SUMMARY)
+# 🔗 QUICK NAVIGATION
 
-## ⚡ Overview
-- [Project Overview](#-overview)
+## 📌 Overview
+- [Overview](#-overview)
 
-## 🧠 Core Competencies
+## 🧠 Skills & Setup
 - [Core Skills Demonstrated](#-core-skills-demonstrated)
-- [Environment & Architecture](#-environment--lab-architecture)
+- [Environment & Lab Architecture](#-environment--lab-architecture)
+- [Virtual Lab Setup](#-virtual-lab-infrastructure-setup)
 
 ## 🎫 Help Desk Simulation
-- [Ticket Lifecycle Workflow](#-ticket-lifecycle-workflow)
-- [Ticket Scenario 1 – Adobe Licensing](#-ticket-scenario-1--adobe-licensing-issue)
-- [Ticket Scenario 2 – VPN Issues](#-ticket-scenario-2--vpn-connectivity-issue)
-- [Ticket Scenario 3 – Active Directory Lockout](#-ticket-scenario-3--active-directory-account-lockout)
+- [Help Desk Lifecycle Workflow](#-ticket-lifecycle-workflow)
+- [Ticket 1 – Adobe Licensing Issue](#-ticket-scenario-1--adobe-licensing-issue)
+- [Ticket 2 – VPN Connectivity Issue](#-ticket-scenario-2--vpn-connectivity-issue)
+- [Ticket 3 – Active Directory Lockout](#-ticket-scenario-3--active-directory-account-lockout)
 - [Final Resolution Summary](#-final-resolution-summary)
 
 ## 🛠 Infrastructure & Deployment
-- [osTicket Deployment & Setup](#-osticket-deployment--infrastructure-troubleshooting)
-- [Database Configuration](#-core-installation--database-configuration)
+- [osTicket Deployment](#-osticket-deployment--infrastructure-troubleshooting)
+- [Database Setup](#-core-installation--database-configuration)
 - [Permissions & Security](#-permissions--configuration-hardening)
-- [Deployment Completion](#-deployment-completion)
-- [Error Handling & Troubleshooting](#-critical-troubleshooting--failure-resolution)
-- [Final Stable System](#-final-error-resolution--stable-deployment)
+- [Error Handling & Debugging](#-critical-troubleshooting--failure-resolution)
+- [Final Stable Deployment](#-final-error-resolution--stable-deployment)
 
 ## 🧪 Skills Breakdown
-- [Active Directory Skills](#active-directory--user-management)
+- [Active Directory](#active-directory--user-management)
 - [Help Desk Operations](#help-desk-operations)
-- [Infrastructure Skills](#infrastructure--system-administration)
-- [Troubleshooting Skills](#technical-troubleshooting)
+- [Infrastructure & Servers](#infrastructure--system-administration)
+- [Troubleshooting](#technical-troubleshooting)
 
 ## 📘 Reflection
 - [What I Learned](#-what-i-learned)
