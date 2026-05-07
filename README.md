@@ -11,38 +11,32 @@
 # 🔗 QUICK NAVIGATION
 
 ## 📌 Overview
-- [Overview](#-overview)
+- [Overview](#overview)
 
-## 🧠 Skills & Setup
-- [Core Skills Demonstrated](#-core-skills-demonstrated)
-- [Environment & Lab Architecture](#-environment--lab-architecture)
-- [Virtual Lab Setup](#-virtual-lab-infrastructure-setup)
+## 🧠 Skills & Environment
+- [Core Skills](#core-skills-demonstrated)
+- [Environment & Architecture](#environment--lab-architecture)
+- [Virtual Lab Setup](#virtual-lab-infrastructure-setup)
 
 ## 🎫 Help Desk Simulation
-- [Help Desk Lifecycle Workflow](#-ticket-lifecycle-workflow)
-- [Ticket 1 – Adobe Licensing Issue](#-ticket-scenario-1--adobe-licensing-issue)
-- [Ticket 2 – VPN Connectivity Issue](#-ticket-scenario-2--vpn-connectivity-issue)
-- [Ticket 3 – Active Directory Lockout](#-ticket-scenario-3--active-directory-account-lockout)
-- [Final Resolution Summary](#-final-resolution-summary)
+- [Ticket Workflow](#ticket-lifecycle-workflow)
+- [Adobe Ticket](#ticket-scenario-1--adobe-licensing-issue)
+- [VPN Ticket](#ticket-scenario-2--vpn-connectivity-issue)
+- [Active Directory Ticket](#ticket-scenario-3--active-directory-account-lockout)
+- [Final Summary](#final-resolution-summary)
 
-## 🛠 Infrastructure & Deployment
-- [osTicket Deployment](#-osticket-deployment--infrastructure-troubleshooting)
-- [Database Setup](#-core-installation--database-configuration)
-- [Permissions & Security](#-permissions--configuration-hardening)
-- [Error Handling & Debugging](#-critical-troubleshooting--failure-resolution)
-- [Final Stable Deployment](#-final-error-resolution--stable-deployment)
-
-## 🧪 Skills Breakdown
-- [Active Directory](#active-directory--user-management)
-- [Help Desk Operations](#help-desk-operations)
-- [Infrastructure & Servers](#infrastructure--system-administration)
-- [Troubleshooting](#technical-troubleshooting)
+## 🛠 Infrastructure
+- [osTicket Deployment](#osticket-deployment--infrastructure-troubleshooting)
+- [Database Setup](#core-installation--database-configuration)
+- [Security & Permissions](#permissions--configuration-hardening)
+- [Error Handling](#critical-troubleshooting--failure-resolution)
+- [Final System State](#final-error-resolution--stable-deployment)
 
 ## 📘 Reflection
-- [What I Learned](#-what-i-learned)
-- [Future Improvements](#-future-improvements)
-- [Notes](#-notes)
-
+- [What I Learned](#what-i-learned)
+- [Future Improvements](#future-improvements)
+- [Notes](#notes)
+- 
 ## 🔹 Overview
 
 Built a virtual IT help desk environment using **Windows Server 2022**, **Windows 10 Pro**, **Active Directory**, and **osTicket** within Oracle VirtualBox.
