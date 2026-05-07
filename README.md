@@ -13,24 +13,31 @@
 ## 📌 Overview
 - [Overview](#overview)
 
-## 🧠 Skills & Environment
-- [Core Skills](#core-skills-demonstrated)
-- [Environment & Architecture](#environment--lab-architecture)
-- [Virtual Lab Setup](#virtual-lab-infrastructure-setup)
+## 🧠 Skills & Setup
+- [Core Skills Demonstrated](#core-skills-demonstrated)
+- [Environment & Lab Architecture](#environment--lab-architecture)
+- [Virtual Lab Infrastructure Setup](#virtual-lab-infrastructure-setup)
 
 ## 🎫 Help Desk Simulation
-- [Ticket Workflow](#ticket-lifecycle-workflow)
-- [Adobe Ticket](#ticket-scenario-1--adobe-licensing-issue)
-- [VPN Ticket](#ticket-scenario-2--vpn-connectivity-issue)
-- [Active Directory Ticket](#ticket-scenario-3--active-directory-account-lockout)
-- [Final Summary](#final-resolution-summary)
+- [Ticket Lifecycle Workflow](#ticket-lifecycle-workflow)
+- [Adobe Licensing Issue](#ticket-scenario-1--adobe-licensing-issue)
+- [VPN Connectivity Issue](#ticket-scenario-2--vpn-connectivity-issue)
+- [Active Directory Account Lockout](#ticket-scenario-3--active-directory-account-lockout)
+- [Final Resolution Summary](#final-resolution-summary)
 
-## 🛠 Infrastructure
-- [osTicket Deployment](#osticket-deployment--infrastructure-troubleshooting)
+## 🛠 Infrastructure & Deployment
+- [osTicket Deployment & Troubleshooting](#osticket-deployment--infrastructure-troubleshooting)
 - [Database Setup](#core-installation--database-configuration)
-- [Security & Permissions](#permissions--configuration-hardening)
-- [Error Handling](#critical-troubleshooting--failure-resolution)
-- [Final System State](#final-error-resolution--stable-deployment)
+- [Permissions & Security](#permissions--configuration-hardening)
+- [Deployment Completion](#deployment-completion)
+- [Error Handling & Root Cause Analysis](#critical-troubleshooting--failure-resolution)
+- [Stable System Output](#final-error-resolution--stable-deployment)
+
+## 🧪 Skills Breakdown
+- [Active Directory User Management](#active-directory--user-management)
+- [Help Desk Operations](#help-desk-operations)
+- [Infrastructure & System Administration](#infrastructure--system-administration)
+- [Technical Troubleshooting](#technical-troubleshooting)
 
 ## 📘 Reflection
 - [What I Learned](#what-i-learned)
@@ -39,150 +46,289 @@
 
 ---
 
-## 📌 Overview
+# 🔹 Overview
 
-Built a virtual IT Help Desk environment using **Windows Server 2022**, **Windows 10 Pro**, **Active Directory**, and **osTicket** within Oracle VirtualBox.
+Built a virtual IT help desk environment using **Windows Server 2022**, **Windows 10 Pro**, **Active Directory**, and **osTicket** within Oracle VirtualBox.
 
-Simulated real-world IT support operations including:
+Configured a fully functional help desk workflow to simulate real-world IT support operations including:
 
-- User account management and password resets  
-- Active Directory administration and account lockout resolution  
-- Ticket escalation and SLA-based workflows  
-- VPN and network troubleshooting  
-- Software licensing support scenarios  
-- Infrastructure deployment and system debugging  
-- Full ticket documentation and resolution tracking  
+- User account management  
+- Password resets  
+- Ticket escalation  
+- SLA handling  
+- VPN troubleshooting  
+- Software support  
+- Active Directory administration  
+- Infrastructure troubleshooting  
+- Documentation and resolution tracking  
 
-This project was built from the ground up while resolving real deployment issues across IIS, PHP, MySQL, and osTicket, simulating enterprise-level IT troubleshooting workflows.
+This lab was built from the ground up while diagnosing and resolving multiple deployment, configuration, database, and web service issues throughout the setup process.
 
----
-
-# 🧠 CORE SKILLS DEMONSTRATED
-
-- Active Directory Administration (ADUC)
-- Help Desk Ticket Lifecycle Management
-- Password Reset & Account Recovery
-- SLA-Based Ticket Routing & Escalation
-- Windows Server Administration
-- IIS / PHP / MySQL Deployment & Troubleshooting
-- Network & VPN Troubleshooting
-- Root Cause Analysis
-- Technical Documentation
-- Virtualization (Oracle VirtualBox)
+The goal of this project was to strengthen hands-on IT support and system administration skills commonly used in entry-level Help Desk, Desktop Support, and IT Support Specialist roles.
 
 ---
 
-# 🏗 ENVIRONMENT & LAB ARCHITECTURE
+# 🔹 Core Skills Demonstrated
+
+- Active Directory Administration  
+- Help Desk Ticket Workflow  
+- Password Reset & Account Recovery  
+- IIS / PHP / MySQL Troubleshooting  
+- VPN & Network Troubleshooting  
+- Windows Server Administration  
+- Virtualization & Lab Deployment  
+- Root Cause Analysis  
+- Technical Documentation  
+- Ticket Lifecycle Management  
+
+---
+
+# 🔹 Environment & Lab Architecture
 
 | Component | Technology |
 | :--- | :--- |
 | Server OS | Windows Server 2022 |
 | Client OS | Windows 10 Pro |
-| Directory Services | Active Directory Users & Computers |
+| Directory Services | Active Directory Users & Computers (ADUC) |
 | Ticketing System | osTicket |
-| Web Server | IIS |
+| Web Services | IIS |
 | Database | MySQL |
-| Backend | PHP |
+| Scripting / Configuration | PHP |
 | Virtualization | Oracle VirtualBox |
 
 ---
 
-# 🖥 VIRTUAL LAB SETUP
+# 🔹 Virtual Lab Infrastructure Setup
 
-| Storage Setup | Guest Additions | Installation Files |
+| Storage Configuration | Guest Additions & Drivers | Installation Repository |
 | :--- | :--- | :--- |
 | ![Storage](add-optical-drive.png) | ![Drivers](cddrive-guest-additions.png) | ![Files](my-installation-files.png) |
-
-Configured full virtual infrastructure including OS installation, drivers, and deployment packages for enterprise simulation.
-
----
-
-# 🎫 TICKET LIFECYCLE WORKFLOW
-
-1. User submits support request  
-2. Ticket assigned via SLA and department routing  
-3. Technician begins troubleshooting  
-4. Actions documented in real time  
-5. Escalation if required  
-6. Resolution documented and ticket closed  
+| Configuring virtual storage controllers and optical drives within VirtualBox. | Installing Guest Additions and compatibility drivers for system stability. | Organizing installation packages including MySQL, PHP, IIS components, and osTicket files. |
 
 ---
 
-# 🎫 TICKET SCENARIOS
+# 🎫 Help Desk Lifecycle & Ticket Scenarios
 
-## Adobe Licensing Issue
-User unable to access Adobe Creative Cloud due to licensing sync failure.  
-Resolved via simulated license reassignment and service troubleshooting.
+## 🔹 Help Desk Backend Configuration
 
-## VPN Connectivity Issue
-Remote user unable to connect to corporate VPN.  
-Resolved through DNS troubleshooting and adapter reset simulation.
+### Departments
+![Departments](department-list.png)
 
-## Active Directory Account Lockout
-User account locked after multiple failed login attempts.  
-Resolved using ADUC password reset and account unlock procedures.
+### SLA Plans
+![SLA](sla-plans.png)
+
+### Agent Roles
+![Agent Roles](add-agent-role.png)
 
 ---
 
-# 🏁 FINAL RESOLUTION SUMMARY
+## 🎫 Ticket Scenario 1 – Adobe Licensing Issue
+
+User unable to access Adobe Creative Cloud due to licensing synchronization issue.
+
+### Troubleshooting Process
+- Reviewed ticket details in osTicket  
+- Investigated licensing configuration  
+- Simulated license reassignment  
+- Updated ticket documentation  
+
+### Resolution
+![Adobe Fix](adobe-ticket.png)
+
+---
+
+## 🎫 Ticket Scenario 2 – VPN Connectivity Issue
+
+User unable to connect to corporate VPN gateway.
+
+### Troubleshooting Process
+- Reviewed VPN error logs  
+- Checked network configuration  
+- Simulated DNS flush and adapter reset  
+- Documented resolution steps  
+
+### Resolution
+![VPN Resolved](vpn-ticket-resolved.png)
+
+---
+
+## 🎫 Ticket Scenario 3 – Active Directory Account Lockout
+
+User account locked due to failed login attempts.
+
+### Troubleshooting Process
+- Verified account lockout in AD  
+- Performed password reset  
+- Unlocked account in ADUC  
+- Documented resolution  
+
+### Resolution
+![Account Resolved](ticket-resolved.png)
+
+---
+
+# 🔹 Ticket Lifecycle Workflow
+
+1. User submits request  
+2. Ticket assigned via SLA/department  
+3. Technician investigates issue  
+4. Troubleshooting documented  
+5. Escalation if needed  
+6. Ticket resolved and closed  
+
+---
+
+# 🔹 Final Resolution Summary
 
 Successfully completed multiple enterprise-style support tickets involving:
 
-- Active Directory recovery
-- VPN troubleshooting
-- Software licensing issues
-- Ticket escalation workflows
-- Full resolution documentation
+- Active Directory account recovery  
+- VPN troubleshooting  
+- Software licensing issues  
+- Ticket escalation workflows  
+- Full documentation of resolution process  
+
+### Closed Ticket Overview
+![Closed Tickets](3-closed-tickets.png)
 
 ---
 
-# 🛠 OSTICKET DEPLOYMENT & TROUBLESHOOTING
+# 🛠️ osTicket Deployment & Infrastructure Troubleshooting
 
-Built and stabilized a full osTicket help desk environment involving:
+Built and stabilized a full help desk system involving:
 
-- IIS web server configuration
-- PHP and MySQL installation
-- Database creation and integration
-- Permission and configuration fixes
-- HTTP 500 error resolution
-- System deployment stabilization
-
----
-
-# 🔧 TROUBLESHOOTING & ROOT CAUSE ANALYSIS
-
-Resolved multiple infrastructure issues including:
-
-- Web service failures (IIS)
-- Database connectivity issues (MySQL)
-- PHP configuration errors
-- Permission and access issues
-- Application deployment failures
+- IIS configuration  
+- MySQL database setup  
+- PHP backend integration  
+- Permission configuration  
+- HTTP 500 error resolution  
+- System deployment debugging  
 
 ---
 
-# 🧠 WHAT I LEARNED
+## 🔹 Core Installation & Database Configuration
 
-- How enterprise IT help desks structure ticket workflows  
-- Active Directory identity and access management fundamentals  
-- Real-world server deployment and troubleshooting  
-- IIS, PHP, and MySQL integration in enterprise environments  
-- Importance of documentation in incident resolution  
-- Root cause analysis and systematic troubleshooting  
+### Database Setup
+![Clean Slate](mysql-clean-slate.png)
+
+### Database Creation
+![Create Database](create-database.png)
 
 ---
 
-# 🚀 FUTURE IMPROVEMENTS
+## 🔹 Permissions & Configuration Hardening
+
+### File Permissions
+![Read Only](read-only.png)
+
+### Configuration Security
+![Config Permissions](ost-config-permissions.png)
+
+---
+
+## 🔹 Deployment Completion
+
+### Installation Complete
+![Congratulations](congratulations.png)
+
+### System Online
+![System Online](osticket.png)
+
+---
+
+## 🔹 Critical Troubleshooting & Failure Resolution
+
+### Administrative & Database Errors
+![Admin Login Error](admin-login-error.png)
+
+### Performance Tuning
+![Execution Time](increase-execution-time.png)
+
+---
+
+## 🔹 Error Identification & Root Cause Analysis
+
+### Multiple Errors
+![Many Errors](many-errors.png)
+
+### Detailed Errors
+![Detailed Errors](detailed-errors.png)
+
+---
+
+## 🔹 Final Error Resolution & Stable Deployment
+
+### HTTP 500 Error
+![Real Error](real-error.png)
+
+### Final Fix Applied
+![osTicket Fix](osticket-fix.png)
+
+### Success
+![Success](success.png)
+
+---
+
+# 🔹 Skills Demonstrated
+
+## 🧠 Active Directory – User Management
+- User account creation and management  
+- Password resets and recovery  
+- Account lockout resolution  
+- Organizational Unit (OU) structuring  
+- Security group assignment  
+- Authentication troubleshooting  
+
+---
+
+## 🧩 Help Desk Operations
+- Ticket lifecycle management  
+- SLA-based routing  
+- Escalation workflows  
+- Documentation of resolutions  
+
+---
+
+## 🛠 Infrastructure & System Administration
+- Windows Server deployment  
+- IIS configuration  
+- MySQL + PHP integration  
+- VirtualBox environment setup  
+- File permission management  
+
+---
+
+## 🔧 Technical Troubleshooting
+- Root cause analysis  
+- Service failure debugging  
+- Log analysis  
+- Network troubleshooting  
+- Application error resolution  
+
+---
+
+# 🧠 What I Learned
+
+- Enterprise help desk workflows  
+- Active Directory administration fundamentals  
+- Server deployment and troubleshooting  
+- Web service integration (IIS + PHP + MySQL)  
+- Importance of structured incident documentation  
+- Systematic root cause analysis  
+
+---
+
+# 🚀 Future Improvements
 
 - Azure Active Directory integration  
 - PowerShell automation for user provisioning  
-- Group Policy troubleshooting lab expansion  
-- Network/printer support simulation  
+- Group Policy troubleshooting expansion  
+- Printer/network support simulations  
 - Multi-client enterprise environment  
 - Onboarding automation scripts  
 
 ---
 
-# 📌 NOTES
+# 📌 Notes
 
 All configurations, troubleshooting, and ticket scenarios were performed in a controlled virtual lab environment to simulate real-world IT support and system administration workflows for portfolio and hiring demonstration purposes.
