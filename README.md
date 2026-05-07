@@ -326,66 +326,69 @@ This section highlights the troubleshooting methodology used to diagnose and res
 
 ## 🧠 Active Directory – User Management
 
-Implemented Active Directory user administration workflows inside a simulated enterprise domain environment. This included managing user accounts, handling password resets, resolving account lockouts, and organizing organizational units (OUs) to mirror a real corporate IT structure.
+Implemented Active Directory user administration workflows in a Windows Server 2022 domain environment using Active Directory Users and Computers (ADUC).
 
-### Key Administrative Tasks Performed:
-- Created and managed user accounts within Active Directory Users and Computers (ADUC)
-- Simulated password reset and account recovery procedures
-- Resolved account lockout scenarios using AD tools
-- Organized users into structured OUs (Organizational Units)
+### Key Administrative Tasks:
+- Created and managed user accounts in ADUC
+- Performed password resets and account recovery procedures
+- Resolved account lockouts using Active Directory tools
+- Organized users into structured Organizational Units (OUs)
 - Assigned users to security groups for role-based access control
-- Applied real-world troubleshooting workflows for authentication issues
-- All tasks were performed in a Windows Server 2022 virtual lab simulating a real enterprise Active Directory environment.
+- Supported authentication troubleshooting scenarios (login failures, account access issues)
 
-## Help Desk Operations
+---
 
-- Ticket lifecycle management
-- SLA configuration
-- Department routing and escalation structure
-- Technical documentation and resolution tracking
+## 🧩 Help Desk Operations
 
-## Infrastructure & System Administration
+- Managed end-to-end ticket lifecycle (creation, troubleshooting, resolution, closure)
+- Configured SLA-based ticket prioritization and response handling
+- Implemented department routing and escalation workflows
+- Documented technical issues and resolution steps within ticketing system
 
-- IIS configuration and troubleshooting
-- PHP extension configuration
-- MySQL setup and administration
-- File permission management
-- Windows Server deployment
-- Virtualization within Oracle VirtualBox
+---
 
-## Technical Troubleshooting
+## 🛠 Infrastructure & System Administration
 
-- Root cause analysis
-- Error log investigation
-- Service troubleshooting
-- Network troubleshooting fundamentals
-- System performance tuning
+- Deployed and configured Windows Server environments in VirtualBox
+- Configured IIS web services for osTicket deployment
+- Installed and managed PHP and MySQL backend services
+- Resolved file permission and configuration issues during deployment
+- Built and maintained virtualized lab infrastructure
+
+---
+
+## 🔧 Technical Troubleshooting
+
+- Performed root cause analysis on system and application failures
+- Diagnosed IIS, PHP, and database configuration errors
+- Resolved service startup and dependency issues
+- Troubleshot network connectivity and DNS-related problems
+- Analyzed error logs to identify system misconfigurations
 
 ---
 
 # 🧠 What I Learned
 
-- How enterprise help desk environments manage support workflows
-- Importance of structured troubleshooting methodology
-- Fundamentals of Active Directory administration
-- Deployment and maintenance of web-based ticketing systems
-- Diagnosing and resolving IIS, PHP, and MySQL configuration issues
-- Value of documentation during incident response and resolution
-- How backend services interact within enterprise support environments
+- How enterprise help desk environments operate structured ticket workflows
+- Importance of systematic troubleshooting and escalation procedures
+- Core Active Directory administration and identity management concepts
+- Deployment and maintenance of web-based ticketing systems (osTicket)
+- Interaction between IIS, PHP, and MySQL in a server environment
+- Value of documentation in incident resolution and support tracking
 
 ---
 
 # 🚀 Future Improvements
 
-- Integrate Azure AD for hybrid identity simulations
-- Automate account provisioning with PowerShell
-- Expand Group Policy troubleshooting scenarios
-- Add printer and networking support simulations
-- Implement multi-client support environment
-- Create PowerShell automation scripts for onboarding tasks
+- Integrate Azure Active Directory for hybrid identity simulation
+- Automate user provisioning with PowerShell scripting
+- Expand Group Policy (GPO) troubleshooting scenarios
+- Add printer and network support simulations
+- Build multi-client enterprise support environment
+- Develop onboarding automation scripts using PowerShell
 
 ---
 
 # 📌 Notes
 
-All ticket scenarios, troubleshooting activities, infrastructure configurations, and deployments were performed within a controlled virtual lab environment for educational and portfolio purposes to demonstrate hands-on IT support workflows, troubleshooting methodology, and system administration fundamentals.
+All configurations, troubleshooting, and ticket scenarios were performed in a controlled virtual lab environment to simulate real-world IT support and system administration workflows for portfolio demonstration purposes.
