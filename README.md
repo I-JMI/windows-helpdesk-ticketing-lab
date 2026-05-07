@@ -1,3 +1,11 @@
+> ### 🛠️ Quick Summary: Enterprise IT Support Simulation
+> **The Goal:** Build and manage a production-ready Help Desk environment from scratch.
+> **Key Tech:** Active Directory, Windows Server 2022, osTicket, IIS, MySQL.
+> **Core Skills:** User Management, SLA Configuration, Network Troubleshooting (VPN/DNS).
+> **[📂 View Step-by-Step Lab Documentation](./path-to-your-folder-or-pdf)** *(Update this link!)*
+
+---
+
 # 💻 Enterprise Help Desk Lab (Active Directory + osTicket)
 
 ![Windows Server](https://img.shields.io/badge/Windows_Server-2022-blue)
