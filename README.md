@@ -36,7 +36,7 @@
 - [What I Learned](#what-i-learned)
 - [Future Improvements](#future-improvements)
 - [Notes](#notes)
-- 
+
 ## 🔹 Overview
 
 Built a virtual IT help desk environment using **Windows Server 2022**, **Windows 10 Pro**, **Active Directory**, and **osTicket** within Oracle VirtualBox.
