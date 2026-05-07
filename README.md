@@ -10,42 +10,42 @@
 
 # 🔗 QUICK NAVIGATION
 
-# 🔗 QUICK NAVIGATION
-
 ## 📌 Overview
+<a id="overview"></a>
+
+# 🔹 Overview
 - [Overview](#overview)
 
 ## 🧠 Skills & Setup
-- [Core Skills Demonstrated](#core-skills-demonstrated)
-- [Environment & Lab Architecture](#environment--lab-architecture)
-- [Virtual Lab Infrastructure Setup](#virtual-lab-infrastructure-setup)
+- [Core Skills Demonstrated](#core-skills)
+- [Environment & Lab Architecture](#environment)
+- [Virtual Lab Infrastructure Setup](#lab-setup)
 
 ## 🎫 Help Desk Simulation
-- [Ticket Lifecycle Workflow](#ticket-lifecycle-workflow)
-- [Adobe Licensing Issue](#ticket-scenario-1--adobe-licensing-issue)
-- [VPN Connectivity Issue](#ticket-scenario-2--vpn-connectivity-issue)
-- [Active Directory Account Lockout](#ticket-scenario-3--active-directory-account-lockout)
-- [Final Resolution Summary](#final-resolution-summary)
+- [Ticket Lifecycle Workflow](#ticket-workflow)
+- [Adobe Licensing Issue](#adobe-ticket)
+- [VPN Connectivity Issue](#vpn-ticket)
+- [Active Directory Account Lockout](#ad-lockout)
+- [Final Resolution Summary](#final-summary)
 
 ## 🛠 Infrastructure & Deployment
-- [osTicket Deployment & Troubleshooting](#osticket-deployment--infrastructure-troubleshooting)
-- [Database Setup](#core-installation--database-configuration)
-- [Permissions & Security](#permissions--configuration-hardening)
-- [Deployment Completion](#deployment-completion)
-- [Error Handling & Root Cause Analysis](#critical-troubleshooting--failure-resolution)
-- [Stable System Output](#final-error-resolution--stable-deployment)
+- [osTicket Deployment & Troubleshooting](#osticket-deployment)
+- [Database Setup](#database-setup)
+- [Permissions & Security](#permissions)
+- [Deployment Completion](#deployment)
+- [Error Handling & Root Cause Analysis](#error-handling)
+- [Stable System Output](#stable-system)
 
 ## 🧪 Skills Breakdown
-- [Active Directory User Management](#active-directory--user-management)
-- [Help Desk Operations](#help-desk-operations)
-- [Infrastructure & System Administration](#infrastructure--system-administration)
-- [Technical Troubleshooting](#technical-troubleshooting)
+- [Active Directory User Management](#ad-management)
+- [Help Desk Operations](#helpdesk-ops)
+- [Infrastructure & System Administration](#infrastructure)
+- [Technical Troubleshooting](#troubleshooting)
 
 ## 📘 Reflection
 - [What I Learned](#what-i-learned)
 - [Future Improvements](#future-improvements)
 - [Notes](#notes)
-
 ---
 
 # 🔹 Overview
