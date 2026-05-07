@@ -11,8 +11,6 @@
 # 📑 Table of Contents
 
 ## 📌 Overview
-
-# 🔹 Overview
 - [Overview](#overview)
 
 ## 🧠 Skills & Setup
